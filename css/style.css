@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+
+/* STYLE THE CONTAINER */
+
+:root{
+    font-family: 'Raleway', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    background-color: #353535;
+    justify-content: center;
+    height: 100%;
+    border: 1px solid black;
+}
+
+/* CARD INFO */
+
+.card{
+    width: 28%;
+    height:90%;
+    background-color: #191919;
+    border: 1px solid #191919;
+    border-radius: 5px;
+    /* USE THE GRID HERE */
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 25% 5% 4% 6%;
+    grid-gap: 10px;
+    padding-bottom: 25px;
+}
+
+/* IMG PLACER */
+.img_place{
+    width: 35%;
+    height: 80%;
+    border-radius: 50%;
+    /* border: 1px solid white; */
+}
+
+/* IMG FIX TO FIT THE DIV */
+
+#img_fix{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+
+.img_grid1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name{
+    /* background-color: white; */
+    display: flex;
+    color: white;
+    letter-spacing: 2px;
+    align-items: center;
+    justify-content: center;
+}
+
+.location{
+    /* background-color: white; */
+    display: flex;
+    color: white;
+    letter-spacing: 1px;
+    align-items: center;
+    color:rgb(255, 229, 82);
+    justify-content: center;
+}
+
+/* quote */
+
+.qoute{
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* BTNS_ZONE */
+
+.btns_zone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid wheat; */
+
+}
+
+.btn_profile_links{
+    width: 85%;
+    border:none;
+    color: white;
+    cursor:pointer;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-color: #353535;
+    height: 80%;
+    border-radius: 5px;
+}
+
+.name h2::first-letter{
+   font-size: 34px;
+}
+
+
+.box{
+    background-color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    .card{
+        width: 100%;
+    }
+  }
+
+
